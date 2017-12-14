@@ -43,7 +43,7 @@ class Tracks extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'user_id' => 'Usuario',
-            'name' => 'Nombre de Tracks',
+            'name' => 'Nombre de Ruta',
             'comment' => 'Comentario',
         ];
     }

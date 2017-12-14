@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model app\models\Positions */
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Positions', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Posiciones', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="positions-view">
@@ -15,11 +15,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
+        <?= Html::a('Actualizar', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Eliminar', ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
+                'confirm' => 'Estás seguro que quieres eliminar este item?',
                 'method' => 'post',
             ],
         ]) ?>
@@ -28,19 +28,19 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
+//            'id',
             'time',
             'user_id',
             'track_id',
             'latitude',
             'longitude',
             'altitude',
-            'speed',
-            'bearing',
-            'accuracy',
-            'provider',
-            'comment',
-            'image_id',
+//            'speed',
+//            'bearing',
+//            'accuracy',
+//            'provider',
+//            'comment',
+//            'image_id',
         ],
     ]) ?>
 

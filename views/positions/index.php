@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\PositionsSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Positions';
+$this->title = 'Posiciones';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="positions-index">
@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Positions', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Crear posiciones', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -29,8 +29,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'user_id',
             'track_id',
             'latitude',
-            // 'longitude',
-            // 'altitude',
+            'longitude',
+            'altitude',
             // 'speed',
             // 'bearing',
             // 'accuracy',

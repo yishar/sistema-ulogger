@@ -6,8 +6,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Tracks */
 
-$this->title = 'Create Tracks';
-$this->params['breadcrumbs'][] = ['label' => 'Tracks', 'url' => ['index']];
+$this->title = 'Crear Ruta';
+$this->params['breadcrumbs'][] = ['label' => 'Rutas', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="tracks-create">

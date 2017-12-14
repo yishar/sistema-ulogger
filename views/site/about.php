@@ -8,8 +8,9 @@
 	<title>LocateME</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvVdl9cfEsiLYLRU_5RmUhKyFq8-viTjw&callback=initMap"
-  type="text/javascript"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvVdl9cfEsiLYLRU_5RmUhKyFq8-viTjw&callback=initMap"
+  type="text/javascript">
+</script>
                 
 	  	<script type="text/javascript">
 	  		var mapa;
@@ -75,6 +76,9 @@
 					datos+='Latitud: '+posicion.coords.latitude+'<br>';
 					datos+='Longitud: '+posicion.coords.longitude+'<br>';
 					datos+='Exactitud: '+posicion.coords.accuracy+'mts.<br>';
+//                                        datos+='Latitud: '+1+'<br>';
+//					datos+='Longitud: '+1+'<br>';
+//					datos+='Exactitud: '+1+'mts.<br>';
 					ubicacion.innerHTML=datos;
 
 				  	var miPosicion = new google.maps.LatLng(

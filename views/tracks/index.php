@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\TracksSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Tracks';
+$this->title = 'Rutas';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="tracks-index">
@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
   
     <p>
-        <?= Html::a('Create Tracks', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Crear Ruta', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,

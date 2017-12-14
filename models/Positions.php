@@ -55,7 +55,7 @@ class Positions extends \yii\db\ActiveRecord
             'id' => 'ID',
             'time' => 'Tiempo',
             'user_id' => 'Usuario',
-            'track_id' => 'Track',
+            'track_id' => 'Ruta',
             'latitude' => 'Latitud',
             'longitude' => 'Longitud',
             'altitude' => 'Altitud',
