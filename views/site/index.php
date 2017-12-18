@@ -8,7 +8,7 @@ use web\css\site;
 ?>
 
 
-<body background="<?php Yii::$app->homeUrl ?>/basic/web/images/imagenmapa1.png" style="background-repeat:no-repeat; width:100%; height:100%">
+<body background="<?php Yii::$app->homeUrl ?>/sistema-ulogger/web/images/imagenmapa1.png" style="background-repeat:no-repeat; width:100%; height:100%">
 <div class="container">
   <div class="jumbotron">
   	<br><br><br>
