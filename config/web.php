@@ -65,6 +65,27 @@ $config = [
              ],
          ],
     ],*/
+        
+    'authClientCollection' => [
+    'class' => yii\authclient\Collection::className(),
+    'clients' => [
+        'facebook' => [
+            'class'        => 'dektrium\user\clients\Facebook',
+            'clientId'     => '1026303030863310',
+            'clientSecret' => '0b392ba3518437cda67632dfcec23ae8',
+        ],
+//        'twitter' => [
+//            'class'          => 'dektrium\user\clients\Twitter',
+//            'consumerKey'    => 'CONSUMER_KEY',
+//            'consumerSecret' => 'CONSUMER_SECRET',
+//        ],
+        'google' => [
+            'class'        => 'dektrium\user\clients\Google',
+            'clientId'     => '826278816988-qofi7pt1db690rghok0ac6uov1queq7u.apps.googleusercontent.com',
+            'clientSecret' => 'lMS2RNtXAOUdDdlL0aIO7Wgq',
+        ],
+    ],
+],
 
     ],
     //Añadido para el user
@@ -99,5 +120,6 @@ if (YII_ENV_DEV) {
         'class' => 'yii\gii\Module',
     ];
 }
+
 
 return $config;
